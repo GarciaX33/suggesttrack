@@ -1,0 +1,110 @@
+body {
+  align-content: center;
+  text-align: center;
+}
+img {
+  margin: 0 auto;
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 20%;
+}
+p {
+  font-family: 'Lato', sans-serif;
+}
+label {
+  font-family: 'Lato', sans-serif;
+  font-weight: bolder;
+}
+
+#ruby {
+  display: none;
+}
+#design {
+  display: none;
+}
+#java {
+  display: none;
+}
+#csharp {
+  display: none;
+}
+#error {
+  display: none;
+}
+#answers {
+  text-align: center;
+}
+
+#answers .btn {
+  margin-top: 50px;
+}
+#answers p {
+  margin: 0 auto;
+  width: 70%;
+}
+#answers h1 {
+  margin: 0 auto;
+  margin-bottom: 10px;
+  width: 70%;
+}
+
+#trouble img{
+  margin-bottom: 50px;
+  margin-top: 50px;
+  width: 10%;
+}
+#design img{
+  width: 28%;
+  margin-top: 40px;
+}
+#java img{
+  margin-top: 30px;
+}
+#csharp img{
+  margin-top: 40px;
+}
+#ruby img{
+  margin-top: 40px;
+}
+
+.container .jumbotron {
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  font-size: 4em;
+  text-align: center;
+  background: -webkit-linear-gradient(bottom right, #51ccc3, #2dada6);
+  color: white;
+}
+
+.form-control {
+  margin-bottom: 15px;
+}
+
+.jumbotron h4 {
+  text-transform: uppercase;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: 'Muli', sans-serif;
+}
+.panel-body {
+  border: 1px solid lightgrey;
+  min-height: 500px;
+  padding-top: 30px;
+  background-color: #e5e5e5;
+}
+.panel-header{
+  font-size: 1.25em;
+  color: grey;
+  text-align: justify;
+}
+
+.btn {
+  display: block;
+  margin: 0 auto;
+}
+
+.well {
+  min-height: 700px;
+  margin-top: 20%;
+}
