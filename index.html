@@ -1,113 +1,115 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery-3.2.1.js"></script>
-    <script src="js/scripts.js"></script>
-    <title>Track Suggest</title>
-  </head>
-  <body>
-      <div class = "jumbotron">
-        <h1>Track Suggest</h1>
-      </div>
-    <div id="formInputs">
-        <div id="frm" class="panel-body">
-          <form id = "formIn">
-            <!-- <div class="form-group" id="formname">
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.2.1.js">
+  </script>
+  <script src="js/scripts.js">
+  </script>
+  <title>Track Suggest</title>
+</head>
+<body>
+  <div class="jumbotron">
+    <h1>Track Suggest</h1>
+  </div>
+  <div id="formInputs">
+    <div class="panel-body" id="frm">
+      <form id="formIn" name="formIn">
+        <!-- <div class="form-group" id="formname">
               <label for="name">First Name:</label>
               <input id="name" class="form-control" type="text" style="width: 700px;">
             </div> -->
-            <div class="row">
-              <div class="col-md-6">
-                <label>What type of company do you prefer?</label>
-                <select class="form-control" id="company1">
-                  <option value="1">startup company</option>
-                  <option value="2">big corporation</option>
-                  <option value="3">agency with many customers</option>
-                  <option value="4">Design company</option>
-                </select>
-
-                <label>What interests you most?</label>
-                <select class="form-control" id="interests">
-                  <option value="1">Designing Business websites</option>
-                  <option value="2">Building software</option>
-                  <option value="3">Web applications</option>
-                  <option value="4">Android developer</option>
-                </select>
-
-                <label>Which of the following is the most important to you?</label>
-                <select class="form-control" id="important1">
-                  <option value="1">Finding a job quickly</option>
-                  <option value="2">Learning a language with practical applications</option>
-                  <option value="3">Designing something that looks great</option>
-                  <option value="4">Creating android applications</option>
-                </select>
-                <div class="form-group">
-                  <label for="whichOperatingSystem">Which <em>Operating System</em> you prefer:</label>
-                  <select id="whichOperatingSystem" class="form-group">
-                    <option value="1">Windows Microsoft</option>
-                    <option value="2">Apple Mac OS</option>
-                  </select>
-                </div>
-
-                <label>Do you prefer back-end development or front-end development?</label>
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="style" value="1" checked>
-                    Back-end
-                  </label>
-                </div>
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="style" value="2">
-                    Front-end
-                  </label>
-                  <button type="submit" class="btn btn-success">Submit!</button>
-                </div>
-              </form>
+        <div class="row">
+          <div class="col-md-6">
+            <label>What type of company do you prefer?</label> <select class="form-control" id="company1">
+              <option value="1">
+                startup company
+              </option>
+              <option value="2">
+                big corporation
+              </option>
+              <option value="3">
+                agency with many customers
+              </option>
+              <option value="4">
+                Design company
+              </option>
+            </select> <label>What interests you most?</label> <select class="form-control" id="interests">
+              <option value="1">
+                Designing Business websites
+              </option>
+              <option value="2">
+                Building software
+              </option>
+              <option value="3">
+                Web applications
+              </option>
+              <option value="4">
+                Android developer
+              </option>
+            </select> <label>Which of the following is the most important to you?</label> <select class="form-control" id="important1">
+              <option value="1">
+                Finding a job quickly
+              </option>
+              <option value="2">
+                Learning a language with practical applications
+              </option>
+              <option value="3">
+                Designing something that looks great
+              </option>
+              <option value="4">
+                Creating android applications
+              </option>
+            </select>
+            <div class="form-group">
+              <label for="whichOperatingSystem">Which <em>Operating System</em> you prefer:</label> <select class="form-group" id="whichOperatingSystem">
+                <option value="1">
+                  Windows Microsoft
+                </option>
+                <option value="2">
+                  Apple Mac OS
+                </option>
+              </select>
+            </div><label>Do you prefer back-end development or front-end development?</label>
+            <div class="radio">
+              <label><input checked name="style" type="radio" value="1"> Back-end</label>
+            </div>
+            <div class="radio">
+              <label><input name="style" type="radio" value="2"> Front-end</label> <button class="btn btn-success" type="submit">Submit!</button>
             </div>
           </div>
-        <div class="col-md-12">
-      <div id ="answers">
-
-        <div id="ruby" class="well">
-          <img src="img/ruby.png" alt="ruby programming language logo">
-          <h1>Hi <span class="name"></span>, looks like you matched for the Ruby/Rails track.</h1>
-          <p>The Ruby track is for people interested in building interactive web applicaitons. Ruby is mostly used for creating dynamic content. This language is popular at startups and small companies. If interested read more about the track <a href="http://www.epicodus.com/ruby">here</a>.</p>
-          <button type="submit" class="btn btn-danger" onClick="history.go(0)" VALUE="Refresh">Try again!</button>
         </div>
-
-        <div id="csharp" class="well">
-          <img src="img/csharp.png" alt="c sharp programming language logo">
-          <h1>Hi <span class="name"></span>, you might be a good fit for the C#/.Net track.</h1>
-          <p>The C# track is for people interested in a well-established programming language. C# is used for building software at big companies. If interested read more about the track <a href="http://www.epicodus.com/c-sharp">here</a>.</p>
-          <button type="submit" class="btn btn-danger" onClick="history.go(0)" VALUE="Refresh">Try again!</button>
-        </div>
-
-        <div id="java" class="well">
-          <img src="img/java.png" alt="java programming language logo">
-          <h1>Hi <span class="name"></span>, you might be a good fit for the Java/Android track.</h1>
-          <p>The Java track is for people interested in building Android user interfaces, working at a large company, or working on high-performance applications. Jobs are in high demand for Java. If interested read more about the track <a href="http://www.epicodus.com/java">here</a>.</p>
-          <button type="submit" class="btn btn-danger" onClick="history.go(0)" VALUE="Refresh">Try again!</button>
-        </div>
-
-        <div id="design" class="well">
-          <img src="img/designtrack.png" alt="html and css language logos">
-          <h1>Hi <span class="tname"></span>, you might be a good fit for the CSS/Design track.</h1>
-          <p>The CSS and Design tracks are for people interested in front-end development. Front-end developers are concerned with what makes a website look good and work well.. If interested read more about the design track <a href="http://www.epicodus.com/design">here</a>.</p>
-          <button type="submit" class="btn btn-danger" onClick="history.go(0)" VALUE="Refresh">Try again!</button>
-        </div>
-
-        <div id="error" class="well">
-          <img src="img/questionmark.png" alt="question mark logo">
-          <h1><span class="name"></span>, I couldnt find a good Language for you, Please try again</h1>
-          <button type="submit" class="btn btn-danger" onClick="history.go(0)" VALUE="Refresh">Try again!</button>
-        </div>
+      </form>
+    </div>
+  </div>
+  <div class="col-md-12">
+    <div id="answers">
+      <div class="well" id="ruby">
+        <img alt="ruby programming language logo" src="img/ruby.png">
+        <h1>Hi <span class="name"></span>, looks like you matched for the Ruby/Rails track.</h1>
+        <p>The Ruby track is for people interested in building interactive web applicaitons. Ruby is mostly used for creating dynamic content. This language is popular at startups and small companies. If interested read more about the track <a href="http://www.epicodus.com/ruby">here</a>.</p><button class="btn btn-danger" onclick="history.go(0)" type="submit" value="Refresh">Try again!</button>
+      </div>
+      <div class="well" id="csharp">
+        <img alt="c sharp programming language logo" src="img/csharp.png">
+        <h1>Hi <span class="name"></span>, you might be a good fit for the C#/.Net track.</h1>
+        <p>The C# track is for people interested in a well-established programming language. C# is used for building software at big companies. If interested read more about the track <a href="http://www.epicodus.com/c-sharp">here</a>.</p><button class="btn btn-danger" onclick="history.go(0)" type="submit" value="Refresh">Try again!</button>
+      </div>
+      <div class="well" id="java">
+        <img alt="java programming language logo" src="img/java.png">
+        <h1>Hi <span class="name"></span>, you might be a good fit for the Java/Android track.</h1>
+        <p>The Java track is for people interested in building Android user interfaces, working at a large company, or working on high-performance applications. Jobs are in high demand for Java. If interested read more about the track <a href="http://www.epicodus.com/java">here</a>.</p><button class="btn btn-danger" onclick="history.go(0)" type="submit" value="Refresh">Try again!</button>
+      </div>
+      <div class="well" id="design">
+        <img alt="html and css language logos" src="img/designtrack.png">
+        <h1>Hi <span class="tname"></span>, you might be a good fit for the CSS/Design track.</h1>
+        <p>The CSS and Design tracks are for people interested in front-end development. Front-end developers are concerned with what makes a website look good and work well.. If interested read more about the design track <a href="http://www.epicodus.com/design">here</a>.</p><button class="btn btn-danger" onclick="history.go(0)" type="submit" value="Refresh">Try again!</button>
+      </div>
+      <div class="well" id="error">
+        <img alt="question mark logo" src="img/questionmark.png">
+        <h1><span class="name"></span>, I couldnt find a good Language for you, Please try again</h1><button class="btn btn-danger" onclick="history.go(0)" type="submit" value="Refresh">Try again!</button>
       </div>
     </div>
   </div>
-</div>
-</div>
-  </body>
+</body>
 </html>
